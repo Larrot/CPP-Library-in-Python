@@ -1,1 +1,7 @@
-
+Suppose you have a simple C++ function in a file example.cpp. To import a function from a C++ file into Python do the following:
+1) Compile your C++ code into a shared library
+  1a) For Linux, use the following command: 
+      g++ -shared -o libexample.so -fPIC example.cpp
+  2b) For Windows:
+      g++ -shared -o libexample.dll example.cpp
+2) Import and use the function in Python (see lib.py file)
